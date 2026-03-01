@@ -5,7 +5,8 @@ nav_order: 1
 
 ---
 
-# PARALLAXX  
+![](/imgs/logo-navbar.png)
+
 ## Formal Hyper-Topological Specification
 
 ---
