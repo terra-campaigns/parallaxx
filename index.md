@@ -1,22 +1,28 @@
 ---
 title: Home
 layout: home
+math: mathjax
 nav_order: 1
 
 ---
 
+<style>
+    mjx-container {text-align: left !important;}
+</style>
+
 ![](/imgs/logo-navbar.png)
 
-## Formal Hyper-Topological Specification
+### A Formal Hyper-Topological Specification
 
 ---
 
 ## §1. Ambient Structure
 
-Let $\mathcal{M}$ denote a connected ambient topological space  
-(optionally a smooth manifold of dimension $n \ge 4$).
+Let \\( \mathcal{M} \\) denote a connected ambient hyper-topological space of dimension  \\( n \ge 4 \\).
 
-$\mathcal{M}$ is not itself a physical world but the embedding space of all operational realities.
+\\( \mathcal{M} \\) is not itself a physical world but the embedding space of all operational realities.
+
+
 
 ---
 
