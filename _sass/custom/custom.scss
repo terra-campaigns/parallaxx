@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Voltaire&display=swap');
+
+body{
+  font-family: 'Voltaire';
+  font-weight: 350;  
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poiret One";
+  font-weight: 350;
+  font-style: normal;
+  text-transform: uppercase;  
+}
+
+tr:nth-child(even) td{
+  background-color: #f2f2f2;
+}
+
+th, td {
+  min-width: initial;
+  padding-top: .35rem;
+  padding-bottom: .35rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+td {
+  border-bottom: 0;
+  border-left: 0;
+}
+
+thead{
+  display: none;
+}
+
+tbody tr:last-of-type td{
+  padding-bottom: .35rem;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+font-size: 1rem;
+}
+
