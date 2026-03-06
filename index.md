@@ -12,43 +12,34 @@ nav_order: 1
 
 ![](/imgs/logo-navbar.png)
 
-### A Formal Hyper-Topological Specification
+### A formal specification
 
 ---
 
-## §1. Ambient Structure
+## §1. The Manifold
 
-Let \\( \mathcal{M} \\) denote a connected ambient hyper-topological space of dimension  \\( n \ge 4 \\).
+Let
+$$\mathcal{M}$$
+denote a continuous **Manifold** with
+$$dim(\mathcal{M}) \ge 5$$
+.
 
-\\( \mathcal{M} \\) is not itself a physical world but the embedding space of all operational realities.
+$$\mathcal{M}$$
+is not itself a physical world but the embedding space of all possible realities.
 
+## §2. Submanifolds
 
+Let
+$$m_i \subset \mathcal{M}$$
+denote a connected embedded **Submanifold** with 
+$$\dim(m_i) < dim(\mathcal{M})$$
+.
 
----
+$$m_i$$
+is a physical world with locally coherent spaces but otherwise pairwise disjoint from other **Submanifolds**:
+$$m_i \cap m_j = \varnothing \quad \text{for } i \ne j$$
 
-## §2. Manifolds (Worlds)
-
-A **Manifold** is a connected embedded submanifold
-
-$$
-m_i \subset \mathcal{M}
-$$
-
-with
-
-$$
-\dim(m_i)=3 \quad \text{or} \quad 4
-$$
-
-Each $m_i$ is an internally coherent world.
-
-Manifolds are pairwise disjoint:
-
-$$
-m_i \cap m_j = \varnothing \quad \text{for } i \ne j
-$$
-
----
+{% comment %}
 
 ## §3. Structural Fields on $\mathcal{M}$
 
@@ -247,3 +238,5 @@ locally.
 6. Petroleum field $P$ enables coupling.  
 7. Thinness is determined by $\Theta = \frac{\chi P}{1+S}$.  
 8. Cross-manifold interaction occurs only in thin regions with sufficient ambient proximity.
+
+{% endcomment %}

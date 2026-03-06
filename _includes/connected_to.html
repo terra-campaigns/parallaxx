@@ -1,10 +1,6 @@
-{% if page.title == 'Directory' %}
+{% if page.title == 'Anchors' %}
 
-{% assign all_references =  site.pages | where_exp:"item", "item.path contains 'directory/'" | where_exp:"item", "item.nav_exclude != true" %}
-
-{% elsif page.title == 'Gazetteer' %}
-
-{% assign all_references =  site.pages | where_exp:"item", "item.path contains 'gazetteer/'" | where_exp:"item", "item.nav_exclude != true" %}
+{% assign all_references =  site.pages | where_exp:"item", "item.path contains 'a_i/'" | where_exp:"item", "item.nav_exclude != true" %}
 
 {% else %}
 
@@ -170,7 +166,7 @@ Image gallery based on https://jekyllcodex.org/without-plugin/image-gallery/#
 {% assign count = all_references | where: 'type', 'session' | size %}
 {% if count > 0 %}
 <p>
-<b>Chapters</b>
+<b>Convergences</b>
 </p>
 {: .text-delta }
 
@@ -179,12 +175,12 @@ Image gallery based on https://jekyllcodex.org/without-plugin/image-gallery/#
     {% if my_page.type == 'session' %}
       {% if my_page.images %}
         <a href="{{ site.url }}{{ my_page.url }}" title="{{ my_page.role }}">
-          <span>{{ my_page.nav_order | date: "%B %-d" }}</span>
+          <span>{{ my_page.nav_order }}</span>
           <img src="//wsrv.nl/?url={{ site.url }}{{ my_page.images[0] | relative_url }}&w=300&h=300&output=jpg&q=50&t=square&bg=white" alt="{{ my_page.title }}"/>
         </a>
       {% else %}
         <a href="{{ site.url }}{{ my_page.url }}" title="{{ my_page.role }}">
-          <span>{{ my_page.nav_order | date: "%B %-d" }}</span>
+          <span>{{ my_page.nav_order }}</span>
           <img src="//wsrv.nl/?url=https://terra-campaigns.github.io/degenesis/imgs/DEGENESIS-LOGOTYPES-PACK/FROM-HELL LOGOS SVG/06-FROM-HELL-LEVIATHANS.svg&w=300&h=300&output=jpg&q=50&t=square&bg=white&bg=white" alt="{{ my_page.title }}"/>
         </a>   
       {% endif %}
