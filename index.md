@@ -20,26 +20,175 @@ nav_order: 1
 
 Let
 $$\mathcal{M}$$
-denote a continuous **Manifold** with
+denote a continuous *Manifold* with
 $$dim(\mathcal{M}) \ge 5$$
 .
 
 $$\mathcal{M}$$
-is not itself a physical world but the embedding space of all possible realities.
+is the embedding space of all possible realisations.
 
 ## §2. Submanifolds
 
 Let
 $$m_i \subset \mathcal{M}$$
-denote a connected embedded **Submanifold** with 
+denote a connected embedded *Sub-manifold* with 
 $$\dim(m_i) < dim(\mathcal{M})$$
 .
 
 $$m_i$$
-is a physical world with locally coherent spaces but otherwise pairwise disjoint from other **Submanifolds**:
+is a realisation with locally coherent spaces.
+
+Realisations are generally pairwise disjoint:
 $$m_i \cap m_j = \varnothing \quad \text{for } i \ne j$$
 
+*Submanifolds* <ins>cannot</ins> be ordered.
+
+
+
+## §3. Phases
+
+A *Phase* in $$m_i$$ is the ordered pair
+$$
+\Phi_i^\alpha = (m_i,\Delta t_\alpha)
+$$
+
+Each
+$$\Phi_i^\alpha$$
+is a bounded spatiotemporal regime.
+
+
+For distinct Phases
+$$\Phi_i^\alpha$$
+and
+$$\Phi_i^\beta$$
+their spatiotemporal intervals are (mostly) disjoint:
+$$
+\Delta t_\alpha \cap \Delta t_\beta = \varnothing
+\quad \text{for } \alpha \ne \beta
+$$
+
+*Phases* <ins>may</ins> be ordered.
+
+## §4. Observations
+
+An *Observation* in
+$$
+\Phi_i^\alpha
+$$
+is a temporal sample of a *Phase*:
+$$
+O_i^{\alpha,k} = (\Phi_i^\alpha | [t_i^k,t_f^k])
+$$
+
+*Observations* <ins>must</ins> ordered.
+
+
+
 {% comment %}
+
+
+## §5. Strata
+
+*Strata* are separate conditions for *Submanifolds* and *Phases*.
+
+For any points 
+$$p \in m_i \text{, } q \in m_j$$
+with
+$$i \ne j$$ and
+$$r \in \Phi_k^\alpha \text{, } s \in \Phi_l^\alpha$$
+with
+$$k \ne l$$
+
+$$
+\operatorname{Sep}(p,q) > 0
+$$
+
+where $\operatorname{Sep}$ is induced by the Stratum field $S$ and ambient metric structure.
+
+Equivalently, manifolds remain isolated when
+
+$$
+S(x) \gg 0
+$$
+
+in regions between them.
+
+## §6. Anchors
+
+Let
+
+$$
+A \subset \mathcal{M}
+$$
+
+be an Anchor.
+
+A Phase $\Phi_i^\alpha$ is **incident to** $A$ if there exists some Observation time $t_k$ and some spatial region $U \subset m_i$ such that
+
+$$
+U \cap (A \cap m_i) \ne \varnothing
+$$
+
+during the interval $\Delta t_\alpha$.
+
+---
+
+## §10. Phase Support
+
+The **support** of a Phase is the spacetime region
+
+$$
+\operatorname{Supp}(\Phi_i^\alpha) = m_i \times [t_0^\alpha,t_1^\alpha]
+$$
+
+or, if desired, a more localized subset
+
+$$
+\operatorname{Supp}(\Phi_i^\alpha) = U_i^\alpha \times [t_0^\alpha,t_1^\alpha]
+$$
+
+where
+
+$$
+U_i^\alpha \subseteq m_i
+$$
+
+is the spatial domain relevant to that Phase.
+
+---
+
+## §11. Phase Ordering
+
+Phases in a given Submanifold inherit a total order from local time:
+
+$$
+\Phi_i^\alpha \prec \Phi_i^\beta
+\quad \Longleftrightarrow \quad
+t_1^\alpha < t_0^\beta
+$$
+
+---
+
+## §12. Axiomatic Summary
+
+1. A Submanifold is an embedded spacetime $m_i \subset \mathcal{M}$.
+2. A Phase is a bounded temporal regime of a Submanifold:
+   $$
+   \Phi_i^\alpha = (m_i,[t_0^\alpha,t_1^\alpha])
+   $$
+3. Distinct Phases in the same Submanifold are temporally disjoint.
+4. An Observation is a temporal sample of a Phase:
+   $$
+   O_i^{\alpha,k} = (m_i,t_k)
+   $$
+5. A Phase may be associated with one or more Anchors through spatial incidence.
+6. Phases are ordered by local time within each Submanifold.
+
+
+
+
+
+
 
 ## §3. Structural Fields on $\mathcal{M}$
 
