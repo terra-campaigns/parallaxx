@@ -1,12 +1,15 @@
 ---
 layout: default
-type: session
+template: 0.4
+type: location
 nav_exclude: false
+has_children: true
+has_toc: true
 
-title: Colonists at the wall
-parent: m1025-unsettled
-region: Northern Gravenmark
-nav_order: m1025.p1030
+parent: Anchors
+title: Lattice
+role: 
+status: 
 footer_content: 
 
 images:
@@ -20,9 +23,6 @@ images:
 LIST without ID "["+ title + "](" + regexreplace(file.path, ".md", "") + ")" + ", from " + regexreplace(file.folder, "^[^\/]*\/", "") FROM ([[]]) OR outgoing([[]]) WHERE file.path != this.file.path SORT file.folder DESC
 ```
 ---
-
-[Lattice](../../a_i/Lattice.md)
-
 {% endcomment %}
 
-Link to unsettled - observations are written there
+Link to unsettled's wall
